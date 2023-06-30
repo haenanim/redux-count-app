@@ -4,7 +4,6 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { createStore } from 'redux';
-import counter from './reducers';
 import rootReducer from './reducers';
 import { Provider } from 'react-redux';
 
@@ -13,11 +12,6 @@ const root = ReactDOM.createRoot(
 );
 
 const store = createStore(rootReducer);
-
-store.dispatch({
-  type: 'ADD_TODO',
-  text: 'Use Redux',
-});
 
 console.log(store.getState());
 

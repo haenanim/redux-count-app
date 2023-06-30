@@ -1,9 +1,11 @@
 import { combineReducers } from 'redux';
 import counter from './counter';
-import todos from './todos';
+import todoList from './todoList';
 
 const rootReducer = combineReducers({
-  todos,
+  todoList,
   counter,
 });
 export default rootReducer;
+
+export type RootState = ReturnType<typeof rootReducer>;

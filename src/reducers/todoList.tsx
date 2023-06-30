@@ -8,7 +8,7 @@ interface Action {
   text: string;
 }
 
-const todos = (state = [], action: Action) => {
+const todoList = (state = [], action: Action) => {
   switch (action.type) {
     case 'ADD_TODO':
       return [...state, action.text];
@@ -17,4 +17,4 @@ const todos = (state = [], action: Action) => {
   }
 };
 
-export default todos;
+export default todoList;
